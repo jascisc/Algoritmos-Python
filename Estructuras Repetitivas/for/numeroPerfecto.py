@@ -1,8 +1,11 @@
-#Dado un número n determinar si es un número perfecto
+#Dado un número n determinar si es un número perfecto(for)
 numero=int(input("Ingresa un número:"))
 aux=2
 suma=1
-while aux<(numero/2)+1:
+# while aux<(numero/2)+1:
+    
+
+for i in range (aux,int((numero/2)+1)):
     if (numero%aux)==0:
         suma+=aux
     aux+=1
