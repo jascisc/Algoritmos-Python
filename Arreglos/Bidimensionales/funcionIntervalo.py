@@ -1,18 +1,19 @@
 #Realizar un programa que tabule los valores de la 
 #función f(x,y)=x^2-y^2+10 para los siguientes intervalos :
-#Para x: [0,7] es decir 0,1,2,…,6,7
-#Para y: [0,6] es decir 0,1,2,…,5,6
-n = 42
-m = 3
-x=1
-y=1
+#Para x: [0,3] es decir 0,1,2,3
+#Para y: [0,2] es decir 0,1,2
+n = 3
+m = 4
+x=-1
+y=0
 matriz = []
-for i in range(n):
+for i in range(m):
     matriz.append([])
-    resultado=0
-    for j in range(m):
-        # print("Ingresa calificación "+str(j+1)+ " del alumno "+str(i+1))
-        resultado=(i**2)-(j**2)+10
-        matriz[i].append(j)
-
-print(matriz)
+    x+=1
+    y=0
+    for j in range(n):
+        resultado=(x**2)-(y**2)+10
+        matriz[i].append([x,y,resultado])
+        y=y+1
+for mat in matriz:
+    print(mat)
